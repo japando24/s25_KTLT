@@ -4,14 +4,25 @@ def q1():
     s_list=list(str)
     #Loại bỏ khoảng trống và ký tự khác ngoài chữ và số
     s_list1=[]
-    for i in len(s_list):
-        if i.isalnum():
+    for i in range (len(s_list)):
+        if s_list[i].isalnum():
             s_list1.append(s_list[i].lower())
     #Bỏ ký tự trùng
-    s_list1.set()
+    s_list_unique=set(s_list1)
+    #Sử dụng Dictionary
+    dic={}
+    for c in s_list_unique:
+        dic[c]=[1,False]
+    for key in s_list1:
+        if dic[key][1] == False:
+            dic[key][1]=True
+        else:
+            dic[key][0]+=1
+    list_key=dic.keys()
+    print("Frequency of occurrence of characters in your string:")
+    for key in list_key:
+        print(f'{key}: {dic[key][0]}-time')
 
-
-    pass
 def q2():
     pass
 def q3():

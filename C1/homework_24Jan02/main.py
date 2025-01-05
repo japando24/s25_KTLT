@@ -1,4 +1,4 @@
-from C1.homework_24Jan02.func import q4
+from C1.homework_24Jan02.func import q4, q1
 
 print(
     "LIST FUNCTION \n"
