@@ -57,6 +57,9 @@ for i in s_list2:
     if s_list0[i] == False:
         s_list0[i] = True
 print("Các ký tự không có trong chuỗi: ", end="")
+res = ""
 for key in s_list0:
     if not s_list0[key]:
-        print((key, end=", "))
+        res += key + ", "
+res = res.rstrip(", ")
+print(res,end="")
