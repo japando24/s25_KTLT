@@ -20,11 +20,38 @@ def q1():
             dic[key][0]+=1
     list_key=dic.keys()
     print("Frequency of occurrence of characters in your string:")
-    for key in list_key:
-        print(f'{key}: {dic[key][0]}-time')
+    sort_dic1=sorted(dic.items(), key=lambda item: item[1][0], reverse=True)
+    for item in sort_dic1:
+        key=item[0]
+        value=item[1][0]
+        print(f'{key}: {value}-time')
 
 def q2():
-    pass
+    word1 = input("Enter 1st word: ")
+    word2 = input("Enter 2nd word: ")
+    word1=word1.lower().strip(" ")
+    word2=word2.lower().strip(" ")
+    #So sánh độ dài 2 chuỗi
+    if len(word1) != len(word2):
+        print("These two words have NO relationship.")
+    else:
+        #Băm chuỗi để so sánh
+        l = len(word1)
+        list1 = list(word1)
+        list2 = list(word2)
+        count = 0
+        #So sánh từng ký tự
+        for i in list1:
+            for j in list2:
+                if i == j:
+                    count += 1
+                else:
+                    continue
+        if count == l:
+            print("These two words can be arranged to make the remaining word.")
+        else:
+            print("These two words have NO relationship.")
+
 def q3():
     pass
 def q4():

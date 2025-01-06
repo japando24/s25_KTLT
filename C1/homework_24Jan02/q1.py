@@ -13,7 +13,7 @@ for i in range(len(s_list)):
         s_new_list.append(s_list[i].lower())
 #Bỏ ký tự trùng
 s_list_only=set(s_new_list)
-print(s_list_only)
+print(f's_list_only: {s_list_only}')
 dic={}
 for c in s_list_only:
     dic[c] = [1, False]
@@ -22,8 +22,19 @@ for c in s_new_list:
         dic[c][1] = True
     else:
         dic[c][0] += 1
-list_key = dic.keys()
-print(list_key)
-for key in list_key:
-    print(f"Ky tu {key} xuat hien {dic[key][0]} lan")
+#Sắp xếp theo thứ tự giảm dần
+print(f'dic: {dic}')
+test=dic.items()
+print(f'test: {test}')
+sort_dic=sorted(dic.items(), key=lambda item: item[1][0], reverse=True)
+print(f'sort_dic: {sort_dic}')
+for item in sort_dic:
+    key=item[0]
+    value = item[1][0]
+    print(f'Key: {key}, Value: {value}')
+
+#BÀI TOÁN MỞ RỘNG: Sau khi sắp xếp theo thứ tự giảm dần theo số lần
+# thì sắp xếp đồng cấp theo alphabet và number (tăng dần: A=>Z, 0=>9)
+#Thingking...
+
 
