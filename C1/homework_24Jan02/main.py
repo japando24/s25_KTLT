@@ -5,7 +5,7 @@ while True:
         "LIST FUNCTION \n"
         "1. Frequency of occurrence of characters (decreasing) \n"
         "2. Check relationship of 2-word \n"
-        "3. \n"
+        "3. Finding out the longest common substring \n"
         "4. Charactes adsent"
     )
 
@@ -25,4 +25,5 @@ while True:
             print("じゃあね（Jaane)! ~ ByeBye \n"
                   "Japan Do")
             break
+    print("*"*40)
 

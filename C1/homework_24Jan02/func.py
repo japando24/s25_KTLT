@@ -53,7 +53,43 @@ def q2():
             print("These two words have NO relationship.")
 
 def q3():
-    pass
+    str1=input("Enter the 1st string: ")
+    str2=input("Enter the 2nd string: ")
+    str1 = str1.strip(" ")
+    str2 = str2.strip(" ")
+    # TH1: Cụm
+    if len(str1.split(" ")) == len(str2.split(" ")) == 1:
+        list1 = list(str1)
+        list2 = list(str2)
+    # TH2: Câu
+    else:
+        list1 = str1.split(" ")
+        list2 = str2.split(" ")
+    # Độ dài
+    len1 = len(list1)
+    len2 = len(list2)
+    # Xác định chuỗi ngắn làm main string
+    if len1 <= len2:
+        len_min = len1
+        len_max = len2
+        list_min = list1
+        list_max = list2
+    else:
+        len_min = len2
+        len_max = len1
+        list_min = list2
+        list_max = list1
+    res = ""
+    for i in range(len_min):
+        for j in range(len_max):
+            if list_min[i] == list_max[j]:
+                if len(str1.split(" ")) == len(str2.split(" ")) == 1:
+                    res += str(list_min[i])
+                else:
+                    res = res + str(list_min[i]) + " "
+            else:
+                continue
+    return res.strip()
 def q4():
     str=input("Enter the string you want to check: ")
     s_list1=list(str)
