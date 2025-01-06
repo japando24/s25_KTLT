@@ -6,7 +6,7 @@ while True:
         "1. Frequency of occurrence of characters (decreasing) \n"
         "2. Check relationship of 2-word \n"
         "3. Finding out the longest common substring \n"
-        "4. Charactes adsent"
+        "4. Charactes adsent (English alphabet)"
     )
 
     print("-"*30)

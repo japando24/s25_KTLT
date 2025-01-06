@@ -89,7 +89,7 @@ def q3():
                     res = res + str(list_min[i]) + " "
             else:
                 continue
-    return res.strip()
+    print(f'The longest string: {res.strip()}')
 def q4():
     str=input("Enter the string you want to check: ")
     s_list1=list(str)
@@ -140,3 +140,4 @@ def q4():
                 res += key + ", "
         res = res.rstrip(", ")
         print(res, end="")
+        print(" ")
