@@ -5,8 +5,9 @@
 #Test case
 #odd_word="madam"
 #even_word="noon" #deed, peep, anna, otto
+
+word = input("Enter your word: ")
 def q1():
-    word=input("Enter your word: ")
     list0=list(word)
     l=len(list0)
     c=0
@@ -32,6 +33,18 @@ def q1():
             print("This even word is symmetrical.")
         elif c != even:
             print("This even word is NOT symmetrical.")
+
+def q1_2():
+    return word==word[::-1] #Đảo ngược chuỗi
+def q1_3():
+    i=0
+    l=len(word)
+    kt=True
+    while i<l//2:
+        if word[i] != word[l-1-i]:
+            return False
+        i += 1
+    return True
 
 while True:
     q1()
