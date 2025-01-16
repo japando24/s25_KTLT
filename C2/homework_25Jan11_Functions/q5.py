@@ -1,0 +1,1 @@
+#Q5: Viết hàm tìm ước số chung lớn nhất của 2 số (dùng kỹ thuật đệ quy và khử đệ quy).

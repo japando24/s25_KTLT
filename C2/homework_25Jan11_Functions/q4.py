@@ -1,0 +1,1 @@
+#Q4: Viết hàm tính tổng của n số hạng (sử dụng đệ quy và khử để quy).
