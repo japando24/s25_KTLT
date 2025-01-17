@@ -19,10 +19,12 @@ def q6_dq(x,n):
         return x**2
     return x**(2*n) + q6_dq(x,n-1)
 
+print("x")
 x=ip()
 print("n")
 n=ip()
+print("-"*30)
 print("NON-RECURSION")
-print(f"Result of expression:  {q6_kdq(x,n)}")
+print(f"Result of expression: {q6_kdq(x,n)}")
 print("RECURSION")
 print(f"Result of expression: {q6_dq(x,n)}")
