@@ -1,0 +1,23 @@
+<products name="product-list">
+
+    <product pCode="1">
+        <code>1</code>
+        <name>Corona Extra</name>
+        <price>$0.84</price>
+        <slogan>Tôi ko nhớ...</slogan>
+    </product>
+
+    <product pCode="2">
+        <code>2</code>
+        <name>Blanc 1664</name>
+        <price>$0.92</price>
+        <slogan>Bia vị chất - Gu độc nhất</slogan>
+    </product>
+
+    <product pCode="3">
+        <code>3</code>
+        <name>Blanc 1900</name>
+        <price>$1.0</price>
+        <slogan>Tôi không tin...</slogan>
+    </product>
+</products>

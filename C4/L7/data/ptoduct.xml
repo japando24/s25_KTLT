@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products>
+    <product>
+        <code>1</code>code>
+        <name>Henienken</name>
+        <price>19000</price>
+    </product>
+
+    <product>
+        <code>2</code>code>
+        <name>Tiger</name>
+        <price>15000</price>
+    </product>
+
+    <product>
+        <code>3</code>code>
+        <name>Sapo</name>
+        <price>21000</price>
+    </product>
+
+</products>
+

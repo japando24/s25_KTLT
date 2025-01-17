@@ -6,7 +6,7 @@ def q6_kdq(x,n):
     s=0
     for i in range(1,n+1):
         s +=  x**(2*i)
-    return
+    return s
 
 q6_kdq(0,0)
 def q6_dq(x,n):
