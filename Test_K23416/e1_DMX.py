@@ -37,6 +37,7 @@ print(cmt_list)
 with open ("data/e1_ĐMX.json","w",encoding="utf8") as f:
     json.dump(cmt_list,f,indent=3,ensure_ascii=False)
     #ensure_ascii: lưu TV ; indent=3: 3 khoảng trống ứng với 1 tab
+
 #%% - Button View All Review
 btn = driver.find_element(By.XPATH,"/html/body/section/div[2]/div[1]/div[9]/div[2]/div/div/div[6]/div/a")
 btn.click()
