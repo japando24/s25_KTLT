@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products>
+    <product>
+        <code>1</code>
+        <name>Henniken</name>
+        <price>28</price>
+    </product>
+
+    <product>
+        <code>2</code>
+        <name>333</name>
+        <price>14</price>
+    </product>
+
+    <product>
+        <code>3</code>
+        <name>SaiGon</name>
+        <price>16</price>
+    </product>
+</products>
