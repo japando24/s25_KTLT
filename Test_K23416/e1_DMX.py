@@ -25,12 +25,29 @@ except TimeoutException:
     driver.quit()
 
 #%% - Display data
-comments = driver.find_elements(By.CLASS_NAME,"cmt-txt")
-cmt_list = []
-for comment in comments:
-    #print(comment.text)
-    cmt_list.append({"comment":comment.text})
+comment_list = driver.find_element(By.XPATH,"/html/body/section/div[2]/div[1]/div[8]/div[2]/div/div/div[6]/ul")
+li_list=comment_list.find_elements(By.TAG_NAME,"li")
+#print(li_list[0].find_elements(By.CLASS_NAME,"cmt-top-name").text)
+#print(li_list[0].find_element(By.CSS_SELECTOR,"p.cmt-top-name").text)
+#print(li_list[0].find_element(By.CSS_SELECTOR,"p[class='cmt-top-name']").text)
+#print(li_list[0].find_element(By.CSS_SELECTOR,"cmt-top-name").text)
+
+cmt_list=[]
+for li in li_list:
+    cmt = li.find_element(By.CLASS_NAME, 'cmt-txt').text
+    user = li.find_element(By.CLASS_NAME, 'cmt-top-name').text
+    cmt_list.append({
+        "user":user,
+        "comment":cmt
+    })
 print(cmt_list)
+
+#old code
+# cmt_list = []
+# for comment in comments:
+#     #print(comment.text)
+#     cmt_list.append({"comment":comment.text})
+# print(cmt_list)
 
 
 #%% - Save json
@@ -41,3 +58,14 @@ with open ("data/e1_ĐMX.json","w",encoding="utf8") as f:
 #%% - Button View All Review
 btn = driver.find_element(By.XPATH,"/html/body/section/div[2]/div[1]/div[9]/div[2]/div/div/div[6]/div/a")
 btn.click()
+
+#%%
+btn_next=driver.find_element(By.XPATH,'/html/body/div[8]/div/div[2]/div/div/div[7]/div/div/div/a[5]')
+btn_next.click()
+
+#%%
+from time import sleep
+for i in range(5):
+    sleep(3)
+
+#Bài ktra sẽ phức tạp sẽ tuương tự khác data
