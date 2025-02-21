@@ -22,7 +22,7 @@ except TimeoutException:
     driver.quit()
 
 
-#%% - Display data
+#%% - Display dataexam
 comments = driver.find_elements(By.CLASS_NAME, "contentcomment")
 for comment in comments:
     print(comment.text)

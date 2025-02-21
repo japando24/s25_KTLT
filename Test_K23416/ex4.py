@@ -2,11 +2,11 @@
 import requests as rq
 from bs4 import BeautifulSoup as bs
 
-#%% - Crawl data from url
+#%% - Crawl dataexam from url
 url ="https://tuoitre.vn/tin-tuc-sang-24-1-cach-ne-ket-xe-khi-ve-mien-tay-an-tet-khai-mac-hoi-hoa-xuan-tp-hcm-20250123050435873.htm"
 response = rq.get(url)
 
-#%% - Display data
+#%% - Display dataexam
 if response.status_code == 200:
     returned_data = response.text
     # print(returned_data)
@@ -26,7 +26,7 @@ if response.status_code == 200:
 Client gửi yêu cầu lên Server
 
 Server-Side Rendering  --- Client-Side Rendering
-Client-Side: html, css, javascript (code -> request server) --> get data
+Client-Side: html, css, javascript (code -> request server) --> get dataexam
 
 
 """

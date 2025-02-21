@@ -24,7 +24,7 @@ except TimeoutException:
     print("Timed out waiting for page to load")
     driver.quit()
 
-#%% - Display data
+#%% - Display dataexam
 comment_list = driver.find_element(By.XPATH,"/html/body/section/div[2]/div[1]/div[8]/div[2]/div/div/div[6]/ul")
 li_list=comment_list.find_elements(By.TAG_NAME,"li")
 #print(li_list[0].find_elements(By.CLASS_NAME,"cmt-top-name").text)
@@ -68,4 +68,4 @@ from time import sleep
 for i in range(5):
     sleep(3)
 
-#Bài ktra sẽ phức tạp sẽ tuương tự khác data
+#Bài ktra sẽ phức tạp sẽ tuương tự khác dataexam

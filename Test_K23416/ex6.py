@@ -10,12 +10,12 @@ import json
 chrome_option = webdriver.ChromeOptions()
 chrome_option.add_experimental_option("detach", True)
 
-#%% Crawl data
+#%% Crawl dataexam
 url = "https://www.dienmayxanh.com/tu-lanh/tu-lanh-aqua-inverter-469-lit-aqr-m536xa-wgb?utm_flashsale=1"
 driver = webdriver.Chrome()
 driver.get(url)
 
-#%% Display data
+#%% Display dataexam
 
 #with open("test/testcmt.json", "w", encoding= "utf-8") as f:
 #    json.dump(cmt_list, f, ensure_ascii=False, indent=3)

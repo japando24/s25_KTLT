@@ -3,14 +3,14 @@ import json
 
 import requests
 
-# - Get data
+# - Get dataexam
 url = "https://fakestoreapi.com/products"
 response = requests.get(url)
 
-# Display data
+# Display dataexam
 products = response.json()
 print(products)
 
-# Save data
+# Save dataexam
 with open("data/products.json","w",encoding="utf8") as f:
     json.dump(products, f,indent=3)
